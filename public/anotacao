@@ -1,0 +1,14 @@
+<div class="content">
+            <div class="card">
+                <div class="topcard">
+                    <h2 class="title"> Id do usuario: </h2>
+                </div>
+                <div class="bottomcard">
+                    <h5>Email:</h5>
+                    <h5>Usuario:</h5>   
+                    <h5>senha:</h5>
+                </div>
+            </div>
+
+
+</div>
