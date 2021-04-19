@@ -1,4 +1,17 @@
+<?php
 
+function showUsers($allUsers, $movieNote, $movieDescription) {
+    echo "<div class='ratings'>";
+    echo "    <p class='name'>Nome: $movieName</p>";
+    echo "    <p>Nota: $movieNote</p>";
+    echo "    <p>Descrição: $movieDescription</p>";
+    echo "    <div class='buttons'>";
+    echo "        <button class='btn1'>Editar</button>";
+    echo "        <button class='btn2'>Excluir</button>";
+    echo "    </div>";
+    echo "</div>";
+} 
+?>
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
@@ -13,19 +26,18 @@
     <div class="container">
             <h1>Exibir dados</h1>
             ⠀<a href="/register">Digite seus dados</a>
-        </div>
+        
         <H2>Resultados</h2>
         <?php 
-        //Foreach($allUsers as $User) {
-           // Echo $User['id_user'];
-            //Echo $User['name_user'];
-          //  }
-          var_dump($allUsers);
-            ?>
-            
-
-
-</div>
+        Foreach($allUsers as $User) {
+            Echo '<div class="card"> <div class="card-body> ';
+            echo '<h5 class="card-title">ID:' . $User['id_user']  . '</h5>';
+            Echo ' <p class="nome"> Nome: ' . $User['name_user'] . '</p>';
+            Echo ' <p class="email"> Email: ' . $User['email_user'] . '</p>';
+            Echo ' <p class="Senha">Senha: ' . $User['password_user'] . '</p>' ;
+            }
+        ?>
+        </div>
 
 </body>
-</html
+</html>
