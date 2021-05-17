@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/editNotes.css">
+    <title>Editar</title>
+</head>
+<body>
+    <div class="allPage">
+        <div class="navbar">
+            <a href="/inicial"><p class="usernotes">Minhas Notas</p></a>
+            <a href="/login"><p class="exit">Sair</p></a>
+        </div>
+        <div class="container">
+            <form class="edit" action="editNota/update" method="POST">
+                <p>Edite sua nota</p>
+                <textarea id="nota" name="edit"
+            rows="5" cols="180" placeholder="edite sua sua anotação"></textarea>
+                <input class="btn" type="submit" value="Enviar">
+            <form>
+        </div>
+    </div>
+</body>
+</html>

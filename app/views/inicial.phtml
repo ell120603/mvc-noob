@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/inicial.css">
+    <title>Inicial</title>
+</head>
+<body>
+    <div class="allPage">
+            <p class="usernotas">Minhas Notas</p>
+            <a href="/newnota"><p class="newnota">Nova nota</p></a>
+            <a href="/login/logout"><p class="exit">Sair</p></a>
+        </div>
+        <div class="container">
+            Olá,<?= $user['name_user']  ?>
+            <?php
+            Foreach($allNotes as $note) {
+                Echo '<div class="card"> <div class="card-body> ';
+                Echo ' <p class="nome"> Titulo: ' . $note['nota_name'] . '</p>';
+                Echo ' <p class="email"> prioridade: ' . $note['priority_note'] . '</p>';
+                Echo ' <p class="Senha"> anotação: ' . $note['note_text'] . '</p>' ;
+                Echo "  <div class='flex'>";
+                Echo "    <form class='buttons' action='editNota' method='POST'>";
+                Echo "        <button type='submit' class='btn1' name='btn1' value='['id_note']'>Editar</button>";
+                Echo "    </form>";
+                Echo "    <form class='buttons' action='inicial/delete' method='POST'>";
+                Echo "        <button type='submit' class='btn2' name='btn2' value='['id_note']'>Excluir</button>";
+                Echo "    </form>";
+                Echo "  </div>";
+                Echo "</div>";
+                }
+            ?>
+        </div>
+    </div>
+</body>
+</html>
+
+

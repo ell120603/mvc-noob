@@ -4,7 +4,7 @@ return [
     'db' => [
         'driver'	=> 'mysql',
         'host'		=> 'localhost',
-        'dbname'	=> 'noob',
+        'dbname'	=> 'crud',
         'user'		=> 'root',
         'pass'		=> '1819'
     ],

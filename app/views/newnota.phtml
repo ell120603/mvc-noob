@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/newnota.css">
+    <title>Nova nota</title>
+</head>
+<body>
+    <div class="Page">
+        <div class="navbar">
+            <a href="/inicial"><p class="userNotas">Minhas Notas</p></a>
+            <a href="/login/logout"><p class="exit">Sair</p></a>
+        </div>
+        <div class="container">
+            <form method="POST" action="inicial">
+                <p>Escreva uma anotação</p>
+                <input type="text" name="NotaName" placeholder="Nome da nota" required minlength="2" maxlength="30">
+                <input type="text" name="note" placeholder="Dê uma prioridade:" required minlength="1" maxlength="2">
+                <textarea type="text" name="description" placeholder="Escreva aqui sua anotação"required minlength="5" maxlength="400"></textarea>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

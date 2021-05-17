@@ -1,61 +1,42 @@
 body {
-    background-color: white;
+    flex: 1;
+    background-color:aqua;
     padding: 0px;
     margin: 0px;
 }
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-
 .register {
     display: grid;
     justify-content: center;
     align-items: center;
     width: 25rem;
     height: 25rem;
+    background-color:crimson;
     position: relative;
     overflow: hidden;
 }
-
-.fontColor {
-    color: #fff;
-}
-
-.fontColor a {
-    color: #4682B4;
-}
-
-
-h1 {
-    color:#4682B4;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -0.1rem;
-    font-size: 3rem;
-}
-
 input {
     width: 15rem;
     height: 1.7rem;
     border-radius: 8px;
-    border: 0.8px solid black;
+    border: 0.5px solid #c1c1c1;
 }
 
 .flex {
     display: flex;
     justify-content: center;
 }
-
 .btn {
     width: 12rem;
     height: 1.8rem;
     background-color:chartreuse;
-    border:black;
-    margin-top: 1rem;
+    border: none;
+    margin-top: 3rem;
     cursor: pointer;
 }
 
@@ -64,8 +45,11 @@ p {
     justify-content: center;
     align-items: center;
 }
-a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.fontColor {
+    color: #fff;
+}
+
+.fontColor a {
+    color:black;
 }
